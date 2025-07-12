@@ -173,7 +173,7 @@ See [`documentation/improvement-roadmap.md`](documentation/improvement-roadmap.m
 
 MIT License - See LICENSE file for details.
 
-Copyright (c) 2025 Will Scott, Search Influence
+Copyright (c) 2025 [Will Scott, AI SEO Expert](https://willscott.me/), [Search Influence](https://www.searchinfluence.com/)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
@@ -192,4 +192,4 @@ The above copyright notice and this permission notice shall be included in all c
 
 **Last Updated:** July 12, 2025, 3:52 PM CST  
 **Version:** 3.0  
-**Maintainer:** Will Scott, AI SEO Expert, CEO of Search Influence
+**Maintainer:** [Will Scott, AI SEO Expert](https://willscott.me/), CEO of [Search Influence](https://www.searchinfluence.com/)
