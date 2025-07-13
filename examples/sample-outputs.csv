@@ -1,0 +1,5 @@
+Question,Number of Results,CPC,Competition,Search Volume,Trends,Relevance,Intent,Source Keyword,AA_Level,AA_Parent,AA_Fresh,Data_Source,Question_ID,Position,CTR,Impressions,Clicks,GSC_Date,GSC_Page
+"What is the best digital marketing strategy?",1240000,2.45,0.67,2400,Rising,9,Informational,"digital marketing",1,"",2024-07-13,GSC,QID_001,15.2,0.034,1250,42,2024-07-12,"https://example.com/digital-marketing-guide"
+"How much does digital marketing cost?",890000,3.21,0.78,1800,Stable,8,Commercial,"digital marketing",1,"",2024-07-13,Semrush,QID_002,,,,,,"" 
+"What are digital marketing channels?",654000,1.89,0.56,1200,Rising,9,Informational,"digital marketing",2,"What is digital marketing?",2024-07-13,AlsoAsked,QID_003,,,,,,"" 
+"How to measure digital marketing ROI?",432000,4.15,0.82,950,Stable,8,Informational,"digital marketing",1,"",2024-07-13,GSC,QID_004,8.7,0.045,890,40,2024-07-12,"https://example.com/marketing-metrics"
