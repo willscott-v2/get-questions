@@ -5,7 +5,7 @@ A comprehensive keyword research automation that pulls question-type search quer
 ## 📋 Overview
 
 **Platform:** Make.com (formerly Integromat)  
-**Current Version:** v3.0  
+**Current Version:** v3.2  
 **Data Sources:** Google Search Console, Semrush (Questions & Related), AlsoAsked  
 **AI Analysis:** OpenAI GPT-4o-mini for intent classification and relevance scoring  
 **Output:** Consolidated Google Sheets database with email notifications  
@@ -18,10 +18,17 @@ Google Form Submission → Variable Extraction → 4-Route Parallel Processing �
 ```
 
 ### Routes
-- **Route 1:** Google Search Console (question-type queries with performance data)
+- **Route 1:** Google Search Console (URL-specific + domain-wide question queries with performance data) 🆕
 - **Route 2:** Semrush Related Keywords (semantic keyword variations)  
 - **Route 3:** Semrush Questions (direct question matches)
 - **Route 4:** AlsoAsked ("People Also Ask" data)
+
+### GSC Smart Routing (v3.2) 🆕
+```
+URL-Specific GSC Query → Result Count Check →
+├── ≥10 Results: Direct Processing (Route 1)
+└── <10 Results: Enhanced with Domain-Wide (Route 2)
+```
 
 ## 📁 Repository Structure
 
@@ -29,7 +36,8 @@ Google Form Submission → Variable Extraction → 4-Route Parallel Processing �
 /
 ├── README.md                          # This file
 ├── blueprints/
-│   ├── questions-generator-v3.0.json  # Current production version
+│   ├── questions-generator-v3.2.json  # Current production version 🆕
+│   ├── questions-generator-v3.0.json  # Previous stable version
 │   └── [future versions]
 ├── documentation/
 │   └── improvement-roadmap.md          # Planned enhancements
@@ -42,7 +50,7 @@ Google Form Submission → Variable Extraction → 4-Route Parallel Processing �
 ### Prerequisites
 - Make.com account with scenario import capabilities
 - API access to:
-  - Google Search Console
+  - Google Search Console (with domain property verified) 🆕
   - Semrush API
   - AlsoAsked API  
   - OpenAI API (GPT-4o-mini)
@@ -53,12 +61,13 @@ Google Form Submission → Variable Extraction → 4-Route Parallel Processing �
 1. **Import Blueprint**
    ```bash
    # Download the latest blueprint
-   wget https://github.com/[your-org]/questions-generator/blob/main/blueprints/questions-generator-v3.0.json
+   wget https://github.com/[your-org]/questions-generator/blob/main/blueprints/questions-generator-v3.2.json
    ```
 
 2. **Configure API Connections**
    - Import blueprint into Make.com
    - Update all API connection credentials
+   - **Verify Google Search Console property access** 🆕
    - Verify Google Sheets permissions
 
 3. **Set Up Input Form**
@@ -66,7 +75,7 @@ Google Form Submission → Variable Extraction → 4-Route Parallel Processing �
    - Connect form responses to trigger spreadsheet
 
 4. **Test Execution**
-   - Submit test form with known keyword
+   - Submit test form with known keyword and specific URL 🆕
    - Monitor execution in Make.com
    - Verify output in results spreadsheet
 
@@ -75,7 +84,7 @@ Google Form Submission → Variable Extraction → 4-Route Parallel Processing �
 | Field | Type | Description | Example |
 |-------|------|-------------|---------|
 | Keyword | Text | Seed keyword for research | "digital marketing" |
-| URL | URL | Website URL for GSC analysis | "https://example.com/blog/post" |
+| URL | URL | **Specific page URL for GSC analysis** 🆕 | "https://example.com/blog/seo-guide" |
 | Context | Text | Additional context for relevance scoring | "Looking for FAQ content for SaaS pricing page" |
 | Result Count | Number | Max results per source | 25 |
 | Email | Email | Notification recipient | "user@example.com" |
@@ -102,6 +111,74 @@ Results are saved to Google Sheets with the following columns:
 | N | Question_ID | Unique identifier | Generated |
 | O-R | GSC Metrics | Position, CTR, Impressions, Clicks | GSC Only |
 | S | GSC_Date | Last crawl date | GSC Only |
+| T | GSC_Page | **Specific page URL from GSC** 🆕 | GSC Only |
+
+## 🎯 Key Features
+
+### Smart GSC Integration (v3.2) 🆕
+- **URL-Specific Targeting**: Discovers questions people actually search for about specific pages
+- **Intelligent Fallback**: Automatically enhances results with domain-wide context when needed
+- **Dual-Query System**: Combines page-specific insights with broader site context
+- **Smart Routing**: Optimizes processing based on available data volume
+
+### Advanced Question Discovery
+- **Multiple Data Sources**: GSC, AlsoAsked, Semrush integration
+- **Question Pattern Recognition**: Regex-based question identification
+- **Relevance Scoring**: AI-powered relevance assessment
+- **Intent Classification**: Automatic categorization of search intent
+
+### AI-Powered Analysis
+- **Relevance Assessment**: Context-aware relevance scoring (1-10)
+- **Intent Classification**: Automatic intent categorization
+- **Duplicate Detection**: Smart deduplication across all sources
+- **Quality Filtering**: Removes low-relevance questions automatically
+
+## 💡 v3.2 Benefits
+
+### 🎯 **Precision + Coverage**
+- Get questions specific to your exact page content
+- Never miss broader opportunities with automatic domain-wide enhancement
+- Perfect balance of targeted relevance and comprehensive coverage
+
+### 📊 **Real Search Data**
+- Questions come from actual Google Search Console data
+- See real impressions, clicks, and positions for each question
+- Understand what people are actually searching for about your content
+
+### 🚀 **Automatic Optimization**
+- High-traffic pages get ultra-targeted questions
+- Low-traffic pages get enhanced with contextual questions
+- New pages benefit from established domain authority insights
+- Zero configuration required - works intelligently out of the box
+
+### 💡 **Content Strategy Insights**
+- Discover content gaps specific to individual pages
+- Understand page-level vs site-level search opportunities
+- Identify questions driving traffic to similar pages
+- Plan content expansion based on real search behavior
+
+## 📖 Usage Examples - v3.2 Enhanced
+
+### Example 1: High-Traffic Blog Post
+**Input**: `https://yourblog.com/ultimate-guide-to-seo`  
+**v3.2 Result**: 
+- 15+ questions specific to SEO guide content
+- Real GSC data showing what readers actually search
+- Direct processing (Route 1) for optimal speed
+
+### Example 2: New Product Page
+**Input**: `https://yourstore.com/new-widget-2024`  
+**v3.2 Result**:
+- 3 questions specific to the new widget
+- Enhanced with 8 questions about similar products from domain
+- Combined processing (Route 2) for comprehensive coverage
+
+### Example 3: Service Landing Page
+**Input**: `https://youragency.com/ppc-management`  
+**v3.2 Result**:
+- 12 questions about PPC management services
+- Enhanced with broader digital marketing questions
+- Perfect mix of service-specific and agency-wide insights
 
 ## 🔧 Configuration
 
@@ -110,6 +187,20 @@ Results are saved to Google Sheets with the following columns:
 - `Rows`: Result count limit  
 - `Email`: Notification email address
 - `GSC_URL`: Processed root URL for Search Console
+- **`URL`: Specific page URL for targeted GSC queries** 🆕
+
+### GSC Configuration (v3.2) 🆕
+
+#### Requirements
+- Google Search Console property properly configured
+- GSC connection authenticated in Make.com
+- Domain verification completed in GSC
+
+#### Automatic Features
+- **URL-Specific Filtering**: Automatically targets questions for specific pages
+- **Domain-Wide Fallback**: Automatically enhances with broader context when needed
+- **Smart Routing**: Optimizes processing based on available data
+- **No Additional Setup**: v3.2 enhancements work automatically with existing GSC connections
 
 ### API Rate Limits
 - **Semrush:** Check your plan limits
@@ -122,8 +213,11 @@ Results are saved to Google Sheets with the following columns:
 ### Current Limitations
 - Context field from form is not currently used in AI analysis
 - Limited error handling for API failures
-- GSC queries are domain-wide, not URL-specific
 - No query expansion for failed Semrush searches
+
+### Resolved in v3.2 ✅
+- ~~GSC queries are domain-wide, not URL-specific~~ → **Now supports both URL-specific and domain-wide**
+- ~~No intelligent fallback for low-traffic pages~~ → **Smart routing with automatic enhancement**
 
 ### Problematic Query Examples
 These queries often return insufficient results:
@@ -131,15 +225,51 @@ These queries often return insufficient results:
 - "CTT OTT"
 - "Marketing during a national crisis"
 
+## 📈 Version History
+
+### v3.2 - GSC URL-Specific Filtering (COMPLETED) 🆕
+**Release Date**: July 13, 2025
+
+**Major Features:**
+- **URL-Specific GSC Queries**: Targets questions specific to the input URL
+- **Smart Fallback System**: Automatically supplements with domain-wide results when needed
+- **Dual-Query Architecture**: Combines targeted + contextual question discovery
+- **Intelligent Routing**: ≥10 URL-specific results = direct processing, <10 = enhanced with domain-wide
+
+**Technical Improvements:**
+- Advanced array merging system using HTTP passthrough method
+- Router-based conditional logic for optimal data flow
+- Enhanced GSC filtering with both page-specific and domain-wide searches
+- Improved result relevance through targeted query prioritization
+
+**Benefits:**
+- **Higher Relevance**: Questions directly related to specific page content
+- **Better Coverage**: Domain-wide fallback ensures comprehensive question discovery
+- **Smarter Processing**: Automatic optimization based on available data
+- **Maintained Performance**: All v3.1 functionality preserved and enhanced
+
+**Use Cases:**
+- High-traffic pages get ultra-targeted questions
+- New/low-traffic pages get enhanced with domain context
+- Corporate sites benefit from both page-specific and company-wide queries
+- Blog posts get both article-specific and site-wide question coverage
+
+### v3.0 - Multi-Source Integration
+**Release Date**: July 12, 2025
+- Initial multi-source implementation
+- GSC, Semrush, AlsoAsked integration
+- AI-powered analysis and scoring
+- Google Sheets output with email notifications
+
 ## 📈 Roadmap
 
 See [`documentation/improvement-roadmap.md`](documentation/improvement-roadmap.md) for detailed enhancement plans.
 
 ### Upcoming Releases
-- **v3.1:** Context Integration (utilize unused form field)
-- **v3.2:** GSC URL-Specific Filtering
-- **v3.3:** Semrush Query Expansion
-- **v3.4:** Enhanced Email Reporting
+- **v3.3:** Context Integration (utilize unused form field)
+- **v3.4:** Semrush Query Expansion
+- **v3.5:** Enhanced Email Reporting
+- **v3.6:** Performance Analytics Dashboard
 
 ## 🛠️ Development
 
@@ -152,6 +282,7 @@ See [`documentation/improvement-roadmap.md`](documentation/improvement-roadmap.m
 
 ### Testing
 - Use known keywords with predictable results
+- **Test both high-traffic and low-traffic URLs for v3.2 routing** 🆕
 - Monitor API usage and costs
 - Verify deduplication across sources
 - Check AI analysis quality
@@ -161,11 +292,13 @@ See [`documentation/improvement-roadmap.md`](documentation/improvement-roadmap.m
 ### Troubleshooting
 1. Check Make.com execution logs
 2. Verify API connection status
-3. Confirm Google Sheets permissions
-4. Review quota limits for all APIs
+3. **Confirm GSC property access for target domain** 🆕
+4. Confirm Google Sheets permissions
+5. Review quota limits for all APIs
 
 ### Common Fixes
 - **Empty Results:** Check API credentials and quota limits
+- **Missing URL-Specific Data:** Verify GSC property includes target URL 🆕
 - **Duplicate Questions:** Verify deduplication logic in modules 22, 23, 24, 39
 - **Missing AI Analysis:** Check OpenAI API key and token limits
 
@@ -190,6 +323,6 @@ The above copyright notice and this permission notice shall be included in all c
 
 ---
 
-**Last Updated:** July 12, 2025, 3:52 PM CST  
-**Version:** 3.0  
+**Last Updated:** July 13, 2025, 4:25 PM CST  
+**Version:** 3.2  
 **Maintainer:** [Will Scott, AI SEO Expert](https://willscott.me/), CEO of [Search Influence](https://www.searchinfluence.com/)
