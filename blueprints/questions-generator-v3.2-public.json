@@ -11,7 +11,7 @@
                 "limit": 1,
                 "sheetId": "Form Responses 1",
                 "__IMTCONN__": 1690924,
-                "spreadsheetId": "/19u9UsJ4HUQsV83xo99w6ysHZrvfy99xe/1YsXMq2QmlwjN-dZOS1JC-XoV7tRuyCgf/1LiZl1LHftJeeMlZHS3_VYWYlltCYL4w4/1L68c6MQ78EU-6YeuX16B9rxE5t7gApdbpsLN0JqG4Wg",
+                "spreadsheetId": "YOUR_GOOGLE_SHEET_ID",
                 "tableFirstRow": "A1:Z1",
                 "includesHeaders": true,
                 "valueRenderOption": "FORMATTED_VALUE",
@@ -40,7 +40,7 @@
                                 "scoped": "true",
                                 "connection": "google"
                             },
-                            "label": "My Google connection (wscott@searchinfluence.com)"
+                            "label": "My Google connection (your-email@example.com)"
                         },
                         "spreadsheetId": {
                             "path": [
@@ -1494,7 +1494,7 @@
                                                 ],
                                                 "sheetId": "Results",
                                                 "sortOrder": "asc",
-                                                "spreadsheetId": "/19u9UsJ4HUQsV83xo99w6ysHZrvfy99xe/1YsXMq2QmlwjN-dZOS1JC-XoV7tRuyCgf/1LiZl1LHftJeeMlZHS3_VYWYlltCYL4w4/1L68c6MQ78EU-6YeuX16B9rxE5t7gApdbpsLN0JqG4Wg",
+                                                "spreadsheetId": "YOUR_GOOGLE_SHEET_ID",
                                                 "tableFirstRow": "A1:CZ1",
                                                 "includesHeaders": true,
                                                 "valueRenderOption": "FORMATTED_VALUE",
@@ -1544,7 +1544,7 @@
                                                                 "scoped": "true",
                                                                 "connection": "google"
                                                             },
-                                                            "label": "My Google connection (wscott@searchinfluence.com)"
+                                                            "label": "My Google connection (your-email@example.com)"
                                                         }
                                                     }
                                                 },
@@ -3790,7 +3790,7 @@
                                                     "19": "{{74.PAGE}}"
                                                 },
                                                 "sheetId": "Results",
-                                                "spreadsheetId": "/19u9UsJ4HUQsV83xo99w6ysHZrvfy99xe/1YsXMq2QmlwjN-dZOS1JC-XoV7tRuyCgf/1LiZl1LHftJeeMlZHS3_VYWYlltCYL4w4/1L68c6MQ78EU-6YeuX16B9rxE5t7gApdbpsLN0JqG4Wg",
+                                                "spreadsheetId": "YOUR_GOOGLE_SHEET_ID",
                                                 "includesHeaders": true,
                                                 "insertDataOption": "INSERT_ROWS",
                                                 "valueInputOption": "USER_ENTERED",
@@ -3981,7 +3981,7 @@
                                                                 "scoped": "true",
                                                                 "connection": "google"
                                                             },
-                                                            "label": "My Google connection (wscott@searchinfluence.com)"
+                                                            "label": "My Google connection (your-email@example.com)"
                                                         }
                                                     }
                                                 },
@@ -4249,7 +4249,7 @@
                                                 ],
                                                 "sheetId": "Results",
                                                 "sortOrder": "asc",
-                                                "spreadsheetId": "/19u9UsJ4HUQsV83xo99w6ysHZrvfy99xe/1YsXMq2QmlwjN-dZOS1JC-XoV7tRuyCgf/1LiZl1LHftJeeMlZHS3_VYWYlltCYL4w4/1L68c6MQ78EU-6YeuX16B9rxE5t7gApdbpsLN0JqG4Wg",
+                                                "spreadsheetId": "YOUR_GOOGLE_SHEET_ID",
                                                 "tableFirstRow": "A1:CZ1",
                                                 "includesHeaders": true,
                                                 "valueRenderOption": "FORMATTED_VALUE",
@@ -4299,7 +4299,7 @@
                                                                 "scoped": "true",
                                                                 "connection": "google"
                                                             },
-                                                            "label": "My Google connection (wscott@searchinfluence.com)"
+                                                            "label": "My Google connection (your-email@example.com)"
                                                         }
                                                     }
                                                 },
@@ -6545,7 +6545,7 @@
                                                     "19": "{{55.array[].PAGE}}"
                                                 },
                                                 "sheetId": "Results",
-                                                "spreadsheetId": "/19u9UsJ4HUQsV83xo99w6ysHZrvfy99xe/1YsXMq2QmlwjN-dZOS1JC-XoV7tRuyCgf/1LiZl1LHftJeeMlZHS3_VYWYlltCYL4w4/1L68c6MQ78EU-6YeuX16B9rxE5t7gApdbpsLN0JqG4Wg",
+                                                "spreadsheetId": "YOUR_GOOGLE_SHEET_ID",
                                                 "includesHeaders": true,
                                                 "insertDataOption": "INSERT_ROWS",
                                                 "valueInputOption": "USER_ENTERED",
@@ -6736,7 +6736,7 @@
                                                                 "scoped": "true",
                                                                 "connection": "google"
                                                             },
-                                                            "label": "My Google connection (wscott@searchinfluence.com)"
+                                                            "label": "My Google connection (your-email@example.com)"
                                                         }
                                                     }
                                                 },
@@ -7171,7 +7171,7 @@
                                 "valueRenderOption": "FORMATTED_VALUE",
                                 "dateTimeRenderOption": "FORMATTED_STRING",
                                 "limit": "1",
-                                "spreadsheetId": "/19u9UsJ4HUQsV83xo99w6ysHZrvfy99xe/1YsXMq2QmlwjN-dZOS1JC-XoV7tRuyCgf/1LiZl1LHftJeeMlZHS3_VYWYlltCYL4w4/1L68c6MQ78EU-6YeuX16B9rxE5t7gApdbpsLN0JqG4Wg",
+                                "spreadsheetId": "YOUR_GOOGLE_SHEET_ID",
                                 "sheetId": "Results",
                                 "includesHeaders": true,
                                 "tableFirstRow": "A1:CZ1",
@@ -7195,7 +7195,7 @@
                                 "restore": {
                                     "parameters": {
                                         "__IMTCONN__": {
-                                            "label": "My Google connection (wscott@searchinfluence.com)",
+                                            "label": "My Google connection (your-email@example.com)",
                                             "data": {
                                                 "scoped": "true",
                                                 "connection": "google"
@@ -9465,7 +9465,7 @@
                                 "valueInputOption": "USER_ENTERED",
                                 "insertDataOption": "INSERT_ROWS",
                                 "from": "drive",
-                                "spreadsheetId": "/19u9UsJ4HUQsV83xo99w6ysHZrvfy99xe/1YsXMq2QmlwjN-dZOS1JC-XoV7tRuyCgf/1LiZl1LHftJeeMlZHS3_VYWYlltCYL4w4/1L68c6MQ78EU-6YeuX16B9rxE5t7gApdbpsLN0JqG4Wg",
+                                "spreadsheetId": "YOUR_GOOGLE_SHEET_ID",
                                 "sheetId": "Results",
                                 "includesHeaders": true,
                                 "values": {
@@ -9492,7 +9492,7 @@
                                 "restore": {
                                     "parameters": {
                                         "__IMTCONN__": {
-                                            "label": "My Google connection (wscott@searchinfluence.com)",
+                                            "label": "My Google connection (your-email@example.com)",
                                             "data": {
                                                 "scoped": "true",
                                                 "connection": "google"
@@ -10161,7 +10161,7 @@
                                 "valueRenderOption": "FORMATTED_VALUE",
                                 "dateTimeRenderOption": "FORMATTED_STRING",
                                 "limit": "1",
-                                "spreadsheetId": "/19u9UsJ4HUQsV83xo99w6ysHZrvfy99xe/1YsXMq2QmlwjN-dZOS1JC-XoV7tRuyCgf/1LiZl1LHftJeeMlZHS3_VYWYlltCYL4w4/1L68c6MQ78EU-6YeuX16B9rxE5t7gApdbpsLN0JqG4Wg",
+                                "spreadsheetId": "YOUR_GOOGLE_SHEET_ID",
                                 "sheetId": "Results",
                                 "includesHeaders": true,
                                 "tableFirstRow": "A1:CZ1",
@@ -10185,7 +10185,7 @@
                                 "restore": {
                                     "parameters": {
                                         "__IMTCONN__": {
-                                            "label": "My Google connection (wscott@searchinfluence.com)",
+                                            "label": "My Google connection (your-email@example.com)",
                                             "data": {
                                                 "scoped": "true",
                                                 "connection": "google"
@@ -12455,7 +12455,7 @@
                                 "valueInputOption": "USER_ENTERED",
                                 "insertDataOption": "INSERT_ROWS",
                                 "from": "drive",
-                                "spreadsheetId": "/19u9UsJ4HUQsV83xo99w6ysHZrvfy99xe/1YsXMq2QmlwjN-dZOS1JC-XoV7tRuyCgf/1LiZl1LHftJeeMlZHS3_VYWYlltCYL4w4/1L68c6MQ78EU-6YeuX16B9rxE5t7gApdbpsLN0JqG4Wg",
+                                "spreadsheetId": "YOUR_GOOGLE_SHEET_ID",
                                 "sheetId": "Results",
                                 "includesHeaders": true,
                                 "values": {
@@ -12482,7 +12482,7 @@
                                 "restore": {
                                     "parameters": {
                                         "__IMTCONN__": {
-                                            "label": "My Google connection (wscott@searchinfluence.com)",
+                                            "label": "My Google connection (your-email@example.com)",
                                             "data": {
                                                 "scoped": "true",
                                                 "connection": "google"
@@ -13191,7 +13191,7 @@
                                 "valueRenderOption": "FORMATTED_VALUE",
                                 "dateTimeRenderOption": "FORMATTED_STRING",
                                 "limit": "1",
-                                "spreadsheetId": "/19u9UsJ4HUQsV83xo99w6ysHZrvfy99xe/1YsXMq2QmlwjN-dZOS1JC-XoV7tRuyCgf/1LiZl1LHftJeeMlZHS3_VYWYlltCYL4w4/1L68c6MQ78EU-6YeuX16B9rxE5t7gApdbpsLN0JqG4Wg",
+                                "spreadsheetId": "YOUR_GOOGLE_SHEET_ID",
                                 "sheetId": "Results",
                                 "includesHeaders": true,
                                 "tableFirstRow": "A1:CZ1",
@@ -13215,7 +13215,7 @@
                                 "restore": {
                                     "parameters": {
                                         "__IMTCONN__": {
-                                            "label": "My Google connection (wscott@searchinfluence.com)",
+                                            "label": "My Google connection (your-email@example.com)",
                                             "data": {
                                                 "scoped": "true",
                                                 "connection": "google"
@@ -15484,7 +15484,7 @@
                                 "insertUnformatted": true,
                                 "valueInputOption": "USER_ENTERED",
                                 "insertDataOption": "INSERT_ROWS",
-                                "spreadsheetId": "/19u9UsJ4HUQsV83xo99w6ysHZrvfy99xe/1YsXMq2QmlwjN-dZOS1JC-XoV7tRuyCgf/1LiZl1LHftJeeMlZHS3_VYWYlltCYL4w4/1L68c6MQ78EU-6YeuX16B9rxE5t7gApdbpsLN0JqG4Wg",
+                                "spreadsheetId": "YOUR_GOOGLE_SHEET_ID",
                                 "sheetId": "Results",
                                 "tableFirstRow": "A1:Z1",
                                 "values": {
@@ -15505,7 +15505,7 @@
                                 "restore": {
                                     "parameters": {
                                         "__IMTCONN__": {
-                                            "label": "My Google connection (wscott@searchinfluence.com)",
+                                            "label": "My Google connection (your-email@example.com)",
                                             "data": {
                                                 "scoped": "true",
                                                 "connection": "google"
@@ -15900,7 +15900,7 @@
                                 "from": "share",
                                 "valueRenderOption": "FORMATTED_VALUE",
                                 "dateTimeRenderOption": "FORMATTED_STRING",
-                                "spreadsheetId": "/19u9UsJ4HUQsV83xo99w6ysHZrvfy99xe/1YsXMq2QmlwjN-dZOS1JC-XoV7tRuyCgf/1LiZl1LHftJeeMlZHS3_VYWYlltCYL4w4/1L68c6MQ78EU-6YeuX16B9rxE5t7gApdbpsLN0JqG4Wg",
+                                "spreadsheetId": "YOUR_GOOGLE_SHEET_ID",
                                 "sheetId": "Results",
                                 "includesHeaders": true,
                                 "tableFirstRow": "A1:CZ1",
@@ -15926,7 +15926,7 @@
                                 "restore": {
                                     "parameters": {
                                         "__IMTCONN__": {
-                                            "label": "My Google connection (wscott@searchinfluence.com)",
+                                            "label": "My Google connection (your-email@example.com)",
                                             "data": {
                                                 "scoped": "true",
                                                 "connection": "google"
@@ -16681,7 +16681,7 @@
                                 ],
                                 "bcc": [],
                                 "from": "",
-                                "html": "<h2>📊 Keyword Research Complete: \"{{2.KW}}\"</h2>\n<p><strong>Generated:</strong> {{formatDate(now; \"MMMM D, YYYY at h:mm A\")}}</p>\n\n<h3>📈 Summary:</h3>\n<p>All {{3.__IMTLENGTH__}} questions analyzed and saved to database.</p>\n<p>Data sources: GSC, Semrush Questions, Semrush Related, AlsoAsked</p>\n\n<h3>📊 View Results:</h3>\n<p><a href=\"https://docs.google.com/spreadsheets/d/1L68c6MQ78EU-6YeuX16B9rxE5t7gApdbpsLN0JqG4Wg/edit#gid=0\" style=\"color: #007bff; text-decoration: none;\">Click here to view full results in Google Sheets</a></p>\n\n<p><em>Research completed successfully! 🚀</em></p>",
+                                "html": "<h2>📊 Keyword Research Complete: \"{{2.KW}}\"</h2>\n<p><strong>Generated:</strong> {{formatDate(now; \"MMMM D, YYYY at h:mm A\")}}</p>\n\n<h3>📈 Summary:</h3>\n<p>All {{3.__IMTLENGTH__}} questions analyzed and saved to database.</p>\n<p>Data sources: GSC, Semrush Questions, Semrush Related, AlsoAsked</p>\n\n<h3>📊 View Results:</h3>\n<p><a href=\"https://docs.google.com/spreadsheets/d/YOUR_GOOGLE_SHEET_ID/edit#gid=0\" style=\"color: #007bff; text-decoration: none;\">Click here to view full results in Google Sheets</a></p>\n\n<p><em>Research completed successfully! 🚀</em></p>",
                                 "subject": "🔍 Keyword Research Complete: \"{{2.KW}}\" - {{27.__IMTLENGTH__}} Questions Found",
                                 "attachments": []
                             },
@@ -16715,7 +16715,7 @@
                                                 "scoped": "true",
                                                 "connection": "google-restricted"
                                             },
-                                            "label": "My Google Restricted connection (google@searchinfluence.com)"
+                                            "label": "My Google Restricted connection (your-restricted-email@example.com)"
                                         }
                                     }
                                 },
