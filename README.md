@@ -45,7 +45,7 @@ URL-Specific GSC Query → Result Count Check →
 │   └── [future versions]
 ├── documentation/
 │   ├── improvement-roadmap.md                  # Planned enhancements
-│   └── v32_handoff_complete.md                 # v3.2 implementation details
+│   └── v32_final_handoff.md                    # v3.2 final project handoff
 └── examples/
     └── sample-outputs.csv                      # Example results
 ```
