@@ -34,15 +34,15 @@ URL-Specific GSC Query → Result Count Check →
 
 ```
 /
-├── README.md                          # This file
+├── README.md                                    # This file
 ├── blueprints/
-│   ├── questions-generator-v3.2.json  # Current production version 🆕
-│   ├── questions-generator-v3.0.json  # Previous stable version
+│   ├── questions-generator-v3.2-public.json    # Current production version (sanitized) 🆕
+│   ├── questions-generator-v3.0.json          # Previous stable version
 │   └── [future versions]
 ├── documentation/
-│   └── improvement-roadmap.md          # Planned enhancements
+│   └── improvement-roadmap.md                  # Planned enhancements
 └── examples/
-    └── sample-outputs.csv             # Example results
+    └── sample-outputs.csv                      # Example results
 ```
 
 ## 🚀 Quick Start
@@ -56,16 +56,39 @@ URL-Specific GSC Query → Result Count Check →
   - OpenAI API (GPT-4o-mini)
 - Google Workspace (Sheets, Forms, Gmail)
 
+## 🔒 Security & Privacy
+
+### Important: Sanitized Public Version
+This repository contains a **sanitized public version** of the automation blueprint. Before using:
+
+1. **Replace placeholder values** in `blueprints/questions-generator-v3.2-public.json`:
+   - `YOUR_GOOGLE_SHEET_ID` → Your actual Google Sheets ID
+   - `your-email@example.com` → Your notification email
+   - `your-restricted-email@example.com` → Your Google restricted connection email
+
+2. **Update email template** HTML with your actual sheet URL
+
+### What We've Sanitized
+- Google Sheets IDs and URLs
+- Email addresses and connections
+- Direct links in email templates
+
+**Never commit your actual API keys, sheet IDs, or email addresses to public repositories.**
+
 ### Setup Instructions
 
 1. **Import Blueprint**
    ```bash
-   # Download the latest blueprint
-   wget https://github.com/[your-org]/questions-generator/blob/main/blueprints/questions-generator-v3.2.json
+   # Download the latest sanitized blueprint
+   wget https://github.com/[your-org]/questions-generator/blob/main/blueprints/questions-generator-v3.2-public.json
    ```
 
-2. **Configure API Connections**
+2. **Configure API Connections & Replace Sensitive Data**
    - Import blueprint into Make.com
+   - **Replace all placeholder values** with your actual:
+     - Google Sheets ID in all modules
+     - Email addresses in connection labels
+     - Sheet URL in email template HTML
    - Update all API connection credentials
    - **Verify Google Search Console property access** 🆕
    - Verify Google Sheets permissions
@@ -210,14 +233,19 @@ Results are saved to Google Sheets with the following columns:
 
 ## 🚧 Known Issues & Limitations
 
+### Resolved in v3.2 ✅
+- ~~GSC queries are domain-wide, not URL-specific~~ → **Now supports both URL-specific and domain-wide**
+- ~~No intelligent fallback for low-traffic pages~~ → **Smart routing with automatic enhancement**
+
 ### Current Limitations
 - Context field from form is not currently used in AI analysis
 - Limited error handling for API failures
 - No query expansion for failed Semrush searches
 
-### Resolved in v3.2 ✅
-- ~~GSC queries are domain-wide, not URL-specific~~ → **Now supports both URL-specific and domain-wide**
-- ~~No intelligent fallback for low-traffic pages~~ → **Smart routing with automatic enhancement**
+### Security Notes 🆕
+- Public blueprint contains sanitized placeholder values
+- Users must replace all sensitive data before use
+- Email templates require manual URL updates
 
 ### Problematic Query Examples
 These queries often return insufficient results:
@@ -299,6 +327,7 @@ See [`documentation/improvement-roadmap.md`](documentation/improvement-roadmap.m
 ### Common Fixes
 - **Empty Results:** Check API credentials and quota limits
 - **Missing URL-Specific Data:** Verify GSC property includes target URL 🆕
+- **Missing Sensitive Data:** Replace placeholder values with actual IDs/emails 🆕
 - **Duplicate Questions:** Verify deduplication logic in modules 22, 23, 24, 39
 - **Missing AI Analysis:** Check OpenAI API key and token limits
 

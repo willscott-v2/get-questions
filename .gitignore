@@ -1,1 +1,44 @@
+# Sensitive Blueprint Files (Keep Private)
 blueprints/*baseline.blueprint.json
+blueprints/*private*
+blueprints/*-real*
+blueprints/*-actual*
+
+# API Keys and Sensitive Configuration
+*.env
+.env*
+config/secrets.json
+secrets/
+
+# macOS System Files (Essential!)
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.TemporaryItems/
+.DocumentRevisions-V100/
+
+# Text Editor Files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Temporary Files
+*.tmp
+*.temp
+*.log
+*.bak
+*.backup
+
+# Make.com Export Files
+exports/
+*.make.export
+
+# Personal Notes
+notes/
+drafts/
+todo.txt
+personal-*
