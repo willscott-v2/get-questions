@@ -35,12 +35,17 @@ URL-Specific GSC Query → Result Count Check →
 ```
 /
 ├── README.md                                    # This file
+├── .gitignore                                   # Protects sensitive blueprint files
+├── LICENSE                                      # MIT License
 ├── blueprints/
 │   ├── questions-generator-v3.2-public.json    # Current production version (sanitized) 🆕
-│   ├── questions-generator-v3.0.json          # Previous stable version
+│   ├── questions-generator-v3.0-baseline.blueprint.json # v3.0 baseline (protected)
+│   ├── questions-generator-v3.1-baseline.blueprint.json # v3.1 baseline (protected)
+│   ├── questions-generator-v3.2-baseline.blueprint.json # v3.2 baseline (protected)
 │   └── [future versions]
 ├── documentation/
-│   └── improvement-roadmap.md                  # Planned enhancements
+│   ├── improvement-roadmap.md                  # Planned enhancements
+│   └── v32_handoff_complete.md                 # v3.2 implementation details
 └── examples/
     └── sample-outputs.csv                      # Example results
 ```
